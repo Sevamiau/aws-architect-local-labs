@@ -15,6 +15,6 @@ This project simulates a **High Availability (HA) Web Architecture** locally on 
 - **Bootstrapping:** Automated software installation via `user-data`.
 
 ##  Usage
-1. **Launch the Infrastructure:** Run ```./launch-all.sh``` to start the VMs if you have kitty as your terminal or `./run-target.sh` with its args if you don't (e.g: ```./run-target.sh Target-01 vms/vm1/fedora-vm/qcow2 vms/vm1/seed.iso``` ). 
-2. **Access the ALB:** Visit `http://localhost`. You will see traffic alternating between Target-01 and Target-02.
+1. **Launch the Infrastructure:** Run ```./launch-all.sh``` to start the VMs if you have kitty as your terminal or `./run-target.sh` with its args if you don't (e.g: ```./run-target.sh Target-01 /vms/vm1/fedora-vm/qcow2 vms/vm1/seed.iso``` ). 
+2. **Access the ALB:** Visit `http://localhost`. You will see traffic alternating between Target-01 and Target-02 (Round Robin).
 3. **Test Fault Tolerance:** Stop a VM and observe the ALB routing 100% of traffic to the survivor.
