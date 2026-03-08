@@ -1,0 +1,2 @@
+instance-id: i-$(uuidgen | cut -d'-' -f1)
+local-hostname: target-01

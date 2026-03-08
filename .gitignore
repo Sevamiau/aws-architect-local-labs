@@ -1,0 +1,14 @@
+*.qcow2
+*.img
+*.raw
+*.iso
+
+seed.iso
+
+*~
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+*.log

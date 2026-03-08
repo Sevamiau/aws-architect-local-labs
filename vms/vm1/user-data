@@ -1,0 +1,12 @@
+#cloud-config
+ssh_pwauth: True
+chpasswd:
+  list: |
+     seva:1234
+  expire: False
+users:
+  - name: seva
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: wheel
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICIZVUeQIahhNzWouE7QcD6iF+JYE5B6PEgr6vLCPlzy seva@fedora
